@@ -1,0 +1,42 @@
+{% extends "base.html" %}{% block content%}
+<p>{{msg}}</p>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="{{ url_for('static' , filename='input.css')}}">
+
+
+</head>
+
+<body>
+    <form action="#" method="post">
+
+        <div class="page ">
+            <div class="heading">
+                <h1>Login</h1>
+            </div>
+            <label for="new_ip" class="field field_v2">
+                <input type="text" class="field__input" id="new_ip" name="new_ip"placeholder="">
+                <span class="field__label-wrap">
+                  <span class="field__label">Username</span>
+                </span>
+              </label>
+            <label for="new_ip" class="field field_v2" style="margin-top:-20%;">
+            <input type="text" class="field__input" id="new_ip" name="new_ip"placeholder="">
+            <span class="field__label-wrap">
+              <span class="field__label">Password</span>
+            </span>
+          </label>
+
+            <label class="btns">
+            <button type="submit" class="btn btn-confirm">Login</button>
+            <button type="reset" class="btn btn-cancel">Cancel</button>
+        </label>
+
+    </form>
+    </div>
+</body>
+
+</html>
+{% endblock %}

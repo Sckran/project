@@ -1,0 +1,41 @@
+{% extends "base.html"%}{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="{{ url_for('static' , filename='input.css')}}">
+
+
+</head>
+
+<body>
+
+    <form action="#" method="post">
+
+        <div class="page ">
+            <div class="heading">
+                <h1>Activate device</h1>
+
+                <h2>[Noe] If you do not know the exact name of the meant device, you can get it from display all devices.
+                </h2>
+            </div>
+
+
+            <label for="device_name" class="field field_v2">
+            <input type="text" class="field__input" id="device_name" name="device_name"placeholder="">
+            <span class="field__label-wrap">
+              <span class="field__label">Enter device name</span>
+            </span>
+          </label>
+
+            <label class="btns">
+            <button type="submit" class="btn btn-confirm">Activate</button>
+            <button type="reset" class="btn btn-cancel">Cancel</button>
+        </label>
+
+    </form>
+    </div>
+</body>
+
+</html>
+{% endblock %}

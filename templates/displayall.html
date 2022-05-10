@@ -1,0 +1,130 @@
+{% extends "base.html"%}{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="{{ url_for('static' , filename='input.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static' , filename='table.css')}}">
+
+
+
+</head>
+
+<body>
+
+    <form action="#" method="post">
+
+        <div class="page">
+            <div class="heading">
+                <h1>Display devices</h1>
+
+            </div>
+
+            </label>
+
+        </div>
+        <table style="width:95%; height: auto;  ">
+            <thead>
+                <tr>
+                    <th>No
+                        <th>Device Count
+                            <th>Address
+                                <th>Name
+                                    <th>ID
+                                        <th>IP
+                                            <th>MAC
+                                                <th>State
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1
+                        <td>{{ deviceCount }}
+                            <td>dasdsa
+                                <td>dasdsa
+                                    <td>
+                                        <td>
+                                            <td>
+                                                <td>
+
+                                                    <tr>
+                                                        <td>2
+                                                            <td>{{ deviceCount }}
+                                                                <td>
+                                                                    <td>
+                                                                        <td>
+                                                                            <td>
+                                                                                <td>{{State}}
+                                                                                    <td>{{State}}
+
+                                                                                        <tr>
+                                                                                            <td>3
+                                                                                                <td>{{ deviceCount }}
+                                                                                                    <td>
+                                                                                                        <td>
+                                                                                                            <td>
+                                                                                                                <td>
+                                                                                                                    <td>
+                                                                                                                        <td>
+
+                                                                                                                            <tr>
+                                                                                                                                <td>4
+                                                                                                                                    <td>{{ deviceCount }}
+                                                                                                                                        <td>
+                                                                                                                                            <td>
+                                                                                                                                                <td>
+                                                                                                                                                    <td>
+                                                                                                                                                        <td>
+                                                                                                                                                            <td>
+                                                                                                                                                                <tr>
+                                                                                                                                                                    <td>5
+                                                                                                                                                                        <td>{{ deviceCount }}
+                                                                                                                                                                            <td>
+                                                                                                                                                                                <td>
+                                                                                                                                                                                    <td>
+                                                                                                                                                                                        <td>
+                                                                                                                                                                                            <td>
+                                                                                                                                                                                                <td>
+
+                                                                                                                                                                                                    <tr>
+                                                                                                                                                                                                        <td>6
+                                                                                                                                                                                                            <td>{{ deviceCount }}
+                                                                                                                                                                                                                <td>
+                                                                                                                                                                                                                    <td>
+                                                                                                                                                                                                                        <td>
+                                                                                                                                                                                                                            <td>
+                                                                                                                                                                                                                                <td>
+                                                                                                                                                                                                                                    <td>
+
+                                                                                                                                                                                                                                        <tr>
+                                                                                                                                                                                                                                            <td>7
+                                                                                                                                                                                                                                                <td>{{ deviceCount
+                                                                                                                                                                                                                                                    }}
+                                                                                                                                                                                                                                                    <td>
+                                                                                                                                                                                                                                                        <td>
+                                                                                                                                                                                                                                                            <td>
+                                                                                                                                                                                                                                                                <td>
+                                                                                                                                                                                                                                                                    <td>
+                                                                                                                                                                                                                                                                        <td>
+
+                                                                                                                                                                                                                                                                            <tr>
+                                                                                                                                                                                                                                                                                <td>8
+                                                                                                                                                                                                                                                                                    <td>{{
+                                                                                                                                                                                                                                                                                        deviceCount
+                                                                                                                                                                                                                                                                                        }}
+                                                                                                                                                                                                                                                                                        <td>
+                                                                                                                                                                                                                                                                                            <td>
+                                                                                                                                                                                                                                                                                                <td>
+                                                                                                                                                                                                                                                                                                    <td>
+                                                                                                                                                                                                                                                                                                        <td>
+                                                                                                                                                                                                                                                                                                            <td>
+                                                                                                                                                                                                                                                                                                                <td>
+
+                                                                                                                                                                                                                                                                                                                    <tr>
+            </tbody>
+        </table>
+    </form>
+
+</body>
+
+</html>
+{% endblock %}

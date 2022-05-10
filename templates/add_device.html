@@ -1,0 +1,51 @@
+ {% extends "base.html"%}{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="{{ url_for('static' , filename='input.css')}}">
+
+
+</head>
+
+<body>
+    <form action="#" method="post">
+
+        <div class="page ">
+            <div class="heading">
+                <h1>Add device</h1>
+            </div>
+            <div class="loader" style="margin-left: -10%">
+
+            </div>
+            <h1 style="margin-top: -10%;font-size:150% ;font-family: 'Courier New', Courier, monospace;"> Waiting for device to be connected!</h1>
+            <label for="ip_src" class="field field_v2">
+
+           <label for="new_ip" class="field field_v2">
+            <input type="text" class="field__input" id="new_ip" name="new_ip"placeholder=""> {{ip_src}}
+            <span class="field__label-wrap">
+              <span class="field__label">Enter Device Name</span>
+            </span>
+          </label>
+
+
+
+            <label for="new_ip" class="field field_v2">
+            <input type="text" class="field__input" id="new_ip" name="new_ip"placeholder="">
+            <span class="field__label-wrap">
+              <span class="field__label">Enter Device Name</span>
+            </span>
+          </label>
+
+            <label class="btns">
+            <button type="submit" class="btn btn-confirm">Add</button>
+            <button type="reset" class="btn btn-cancel">Cancel</button>
+        </label>
+
+    </form>
+    </div>
+</body>
+
+</html>
+{% endblock %}
+<!-- if device detected make field editable and disapper the loader -->
